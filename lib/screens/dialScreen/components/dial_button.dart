@@ -5,10 +5,10 @@ import '../../../size_config.dart';
 
 class DialButton extends StatelessWidget {
   const DialButton({
-    Key key,
-    @required this.iconSrc,
-    @required this.text,
-    @required this.press,
+     Key? key,
+    required this.iconSrc,
+    required this.text,
+    required this.press,
   }) : super(key: key);
 
   final String iconSrc, text;
@@ -18,10 +18,10 @@ class DialButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: getProportionateScreenWidth(120),
-      child: FlatButton(
-        padding: EdgeInsets.symmetric(
-          vertical: getProportionateScreenWidth(20),
-        ),
+      child: TextButton(
+        // padding: EdgeInsets.symmetric(
+        //   vertical: getProportionateScreenWidth(20),
+        // ),
         onPressed: press,
         child: Column(
           children: [

@@ -1,4 +1,5 @@
 import 'package:calling/screens/dialScreen/dial_screen.dart';
+import 'package:calling/screens/groupCall/components/user_calling_card.dart';
 import 'package:calling/screens/groupCall/group_call_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         fontFamily: "SF UI",
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: GroupCallScreen(),
+      home: Scaffold(body: UserCallingCard(name: 'steve jon', image: "assets/images/group_call_face_small.png",)),
     );
   }
 }

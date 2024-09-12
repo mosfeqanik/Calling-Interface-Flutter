@@ -4,9 +4,9 @@ import '../size_config.dart';
 
 class DialUserPic extends StatelessWidget {
   const DialUserPic({
-    Key key,
+    Key? key,
     this.size = 192,
-    @required this.image,
+    required this.image,
   }) : super(key: key);
 
   final double size;
