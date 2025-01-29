@@ -10,7 +10,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,7 +19,9 @@ class MyApp extends StatelessWidget {
         fontFamily: "SF UI",
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(body: UserCallingCard(name: 'steve jon', image: "assets/images/group_call_face_small.png",)),
+      home: Scaffold(
+        body: GroupCallScreen(),
+      ),
     );
   }
 }
